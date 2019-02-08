@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="ogm-jpa-mongo" transaction-type="JTA">
+    <provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+    <class>model.schema.Device</class>
+    <class>model.schema.User</class>
+    <class>model.schema.Session</class>
+    <class>model.schema.Sensor</class>
+    <class>model.schema.Datum</class>
+    <class>model.schema.Acquisition</class>
+    <class>model.schema.Sample</class>
+    <properties>
+      <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform"/>
+      <property name="hibernate.ogm.datastore.provider" value="mongodb"/>
+      <property name="hibernate.ogm.datastore.port" value="27017"/>
+      <property name="hibernate.ogm.error_handler" value="controller.ErrorController"/>
+      <property name="hibernate.ogm.mongodb.driver.socketKeepAlive" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
