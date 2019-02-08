@@ -1,7 +1,7 @@
 # MultiBiometricDataAnalysis
 A technology for storing and analyzing multi-biometric data
 
-I made this project during my bachelor studies.
+I made this project during my bachelor studies at Università Federico II di Napoli.
 
 ## Abstract
 Modern society sees a constant evolution of technologies for the recognition of people through biometrics. The efficiency of the biometric systems is a topic of critical interest, given the importance that the accuracy obtained can have. Just think of a security system that requires authentication procedures capable of effectively avoiding false positives and negatives.
